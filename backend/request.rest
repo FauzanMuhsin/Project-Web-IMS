@@ -1,0 +1,45 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsIm5hbWUiOiJ1c2VyIiwiZW1haWwiOiJ1c2VyQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzY4NzQzMDU0LCJleHAiOjE3Njg3NDMwNzR9.UsDI5Cl7GIkpPk7xa3ytAZwrto71DSQ6APUxDQRwKv8
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "admin",
+    "email": "a@gmail.com",
+    "role": "admin",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "user@gmail.com",
+    "password": "123456"
+}
+
+###
+GET  http://localhost:5000/token
+
+###
+POST http://localhost:5000/tambah_barang
+Content-Type: application/json
+
+{
+    "sku":"TEST-123",
+    "nama_barang": "meja bundar",
+    "stok_minimum": "200",
+    "satuan": "unit",
+    "harga_beli": "100000", 
+    "harga_jual": "180000", 
+    "material": "alumunium"
+}
+
+###
+GET http://localhost:5000/searchBarang?q=meja
+
+###
+GET http://localhost:5000/hapusBarang

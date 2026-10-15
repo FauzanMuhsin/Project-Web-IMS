@@ -1,0 +1,8 @@
+// 1. Import fungsi-fungsi bawaan bootstrap
+@use "bootstrap/scss/functions";
+
+// 2. Kustomisasi variabel di sini (Contoh: Ganti warna primary jadi orange)
+$bg-primary: blue; 
+
+// 3. Import semua library bootstrap
+@use "bootstrap/scss/bootstrap";

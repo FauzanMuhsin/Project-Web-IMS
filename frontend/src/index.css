@@ -1,0 +1,64 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+}
+.container{
+  display: flex;
+}
+
+/* SIDEBAR */
+.container-sidebar{
+  flex-direction: column;
+  position: fixed;
+  background-color: rgb(56, 56, 54);
+  text-transform: capitalize;
+  width: 250px;
+  min-height: 100vh;
+}
+
+.profile-sidebar{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+li{
+  padding: 7px;
+}
+
+.link{
+  color: white;
+  text-decoration: none;
+}
+/* CONTENT */
+.login-container {
+  display: flex;            /* Aktifkan Flexbox */
+  justify-content: center;   /* Rata tengah secara Horizontal */
+  align-items: center;       /* Rata tengah secara Vertikal */
+  min-height: 100vh;        /* Tinggi wajib 100% dari tinggi layar */
+  background-color: #f0f2f5; /* Opsional: warna background luar */
+}
+
+.login-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;         /* Supaya card nggak terlalu lebar di layar PC */
+}
+.container-box{
+  margin-left: 300px;
+}
+
+.box{
+  background-color: yellow;
+  margin-top: 20px;
+  height: 100px;
+  width: 200px;
+  margin-top: 20px;
+  color: black;
+}
+
+/* Data Barang */
